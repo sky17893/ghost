@@ -22,7 +22,7 @@ class ActionProvider {
 
       const searchQuery = message.includes('약') ? message : `${message} 약`;
 
-      const response = await fetch("http://localhost:8000/chat1", {
+      const response = await fetch("https://back.aicc4hyeonji.site/chat1", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
