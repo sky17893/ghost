@@ -1,0 +1,35 @@
+{
+  "rewrites": [
+    {
+      "source": "/v1/search/:path*",
+      "destination": "https://openapi.naver.com/v1/search/:path*"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/v1/search/(.*)",
+      "headers": [
+        {
+          "key": "X-Naver-Client-Id",
+          "value": "dCa8QUFNyajk81l0ykKk"
+        },
+        {
+          "key": "X-Naver-Client-Secret",
+          "value": "J76Yqr6w01"
+        },
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "X-Naver-Client-Id, X-Naver-Client-Secret, Content-Type"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("assets/fonts/Pretendard-Regular.woff2") format("woff2"),
+       url("assets/fonts/Pretendard-Regular.woff") format("woff"),
+       url("assets/fonts/Pretendard-Regular.otf") format("opentype"),
+       url("assets/fonts/Pretendard-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "LemonMilk";
+  src: url(assets/fonts/LEMONMILK-Medium.otf) format("opentype");
+}
+
+input, select, button {
+  appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+}
+
+.container {
+  width: 100%;
+  margin: 0 1rem;
+  max-width: 1280px;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer !important;
+}
+
+
+/* Common Font Style */
+
+/* Common Button Style */
+.btn {
+  padding: 0.25rem 0.75rem;
+  background: #007bff;
+  color: #fff;
+  font-size: 1.025rem;
+  border-radius: 0.375rem;
+  margin: 0.5rem 0;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+/* Custom Swiper Style */
+.swiper {
+  padding: 20px 10px !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+}
+
+/* .swiper .swiper-slide {
+  text-align: center;
+  height: 100px;
+} */
+
+/* .swiper .swiper-pagination {
+  bottom: -100px !important;
+} */
+
+.swiper .swiper-button-prev {
+  right: 200px;
+}
+
+.swiper .swiper-button-next {
+  left: 200px;
+}
+
+/* Footer Common Style */
+footer .footer_title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+footer ul a {
+  color: #bbb;
+  font-weight: 300;
+}
+
+footer ul a:hover {
+  color: #fff;
+}
+
+/* Management style */
+.form-item {
+  border: 1px solid rgb(209 213 219 / var(--tw-border-opacity, 1));
+  border-radius: 0.25rem;
+  padding: 0.4rem;
+}
+.form-item label {
+  padding-left: 0.25rem;
+  padding-right: 0.5rem;
+  display: inline-block;
+  width: 8.125rem;
+}
+
+/* MediDetail Style */
+.description {
+  border: skyblue;
+  padding: 6px;
+  background: skyblue;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  width: fit-content;
+}
+
