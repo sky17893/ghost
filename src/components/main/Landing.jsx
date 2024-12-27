@@ -90,14 +90,11 @@ const Landing = () => {
             가정용 약물 정보 및 관리 사이트입니다.
           </p>
 
-          <form
-            className="flex items-center w-full"
-            onSubmit={handleSearch}
-          >
+          <form className="flex items-center w-full" onSubmit={handleSearch}>
             <div className="relative w-full flex items-center rounded-md bg-white shadow-sm">
               <input
                 type="search"
-                className="w-[260px] md:w-full py-4 pl-4 pr-12 text-md text-gray-900 outline-none bg-white rounded-md"
+                className="w-[300px] md:w-full py-4 pl-4 pr-12 text-md text-gray-900 outline-none bg-white rounded-md"
                 placeholder="증상 or 일반의약품 검색"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
